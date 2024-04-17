@@ -5,6 +5,7 @@ import data from './data'
 import AboutMe from './AboutMe';
 import SuggestLoc from './SuggestLoc';
 import Space from './Space';
+import RandomCard from './RandomCard';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       <Space/>
       <Body data={data}/>
       <Space/>
-      <AboutMe/>
-      <Space/>
       <SuggestLoc/>
+      <Space/>
+      <RandomCard data={data}/>
+      <Space/>
+      <AboutMe/>
       <Space/>
     </div>
   )

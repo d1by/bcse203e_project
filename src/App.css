@@ -100,7 +100,6 @@ h1 {
   font-size: 2rem;
 }
 
-
 .card nav {
   position: relative;
   padding: 0.5rem;
@@ -132,6 +131,11 @@ nav:hover .overlay {
   text-align: center;
 }
 
+/* nav:hover img{
+  filter: blur(5px);
+  transition: 1s ease;
+} */
+
 .category{
   color: #FFC470; 
   padding-right: 50px;
@@ -145,7 +149,7 @@ nav:hover .overlay {
   text-align: center;
 }
 
-.suggestForm textarea{
+.suggestForm textarea, input{
   width: 20%;
   height: 1rem;
   padding: 10px;
@@ -169,4 +173,20 @@ nav:hover .overlay {
   text-shadow: 2px 2px 4px #00000080;
   text-transform: uppercase;
   text-align: center;
+}
+
+.card button {
+  margin-top: 1rem; 
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #78918E;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #5E7A78;
 }

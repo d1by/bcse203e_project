@@ -11,6 +11,8 @@ function Header(){
                     <span>|</span>
                     <a href="#suggest">Suggestions</a>
                     <span>|</span>
+                    <a href="#random">Random Location</a>
+                    <span>|</span>
                     <a href="#about">About Me</a>
                 </nav>
             </header>
