@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import data from './data';
+import Confetti from 'react-confetti';
 
 function SuggestLoc() {
     const [title, setTitle] = useState('');
@@ -26,7 +27,7 @@ function SuggestLoc() {
 
         setTimeout(function() {
             setSubmitted(false);
-        }, 1000);
+        }, 5000);
     }
 
     function handleTitleChange(obj) {
@@ -68,7 +69,19 @@ function SuggestLoc() {
                     onChange={handleImageChange}
                 />
                 <br />
-                <button type="submit">{submitted ? 'Thank you! ' : 'Submit'}</button>
+                <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <button type="submit" disabled={submitted}>
+                        {submitted ? 'Thank you!' : 'Submit'}
+                    </button>
+                    {submitted && (
+                        <Confetti
+                            width={140}
+                            height={500}
+                            numberOfPieces={200}
+                            style={{position: 'absolute'}}
+                        />
+                    )}
+                </div>
             </form>
             <center>
                 <div className="card">
