@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import data from './data';
+import React, {useState} from 'react';
+// import data from './data';
 import Confetti from 'react-confetti';
 
 function SuggestLoc() {
@@ -17,7 +17,7 @@ function SuggestLoc() {
             image: image
         };
 
-        data.push(newCard);
+        // data.push(newCard);
 
         setTitle('');
         setDesc('');

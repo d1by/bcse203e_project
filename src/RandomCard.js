@@ -14,7 +14,7 @@ function RandomCard({ data }) {
 
     return (
         <div id="random">
-            <h1 class="title" style={{paddingTop: '100px'}}>Select a random location</h1>
+            <h1 class="title" style={{paddingTop: '100px'}}>Pick a random location</h1>
             <center>
                 <div className="card">
                     <h1>{title}</h1>
